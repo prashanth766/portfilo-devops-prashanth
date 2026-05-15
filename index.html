@@ -5,25 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prashanth Chirlavancha | DevOps and Cloud Engineer</title>
   <meta name="description" content="Professional DevOps and Cloud Engineer portfolio of Prashanth Chirlavancha. Expert in AWS, Docker, Kubernetes, Terraform, and CI/CD automation with proven hands-on experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="page-shell">
     <header class="topbar">
-      <div class="brand"></div>
-      <nav class="navbar" id="navbar">
-        <ul class="nav-links">
-          <li><a href="#home" class="nav-link active">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
-          <span></span><span></span><span></span>
-        </button>
-      </nav>
+      <div class="container header-inner">
+        <div class="brand">Chirlavancha <span class="brand-accent">Prashanth</span></div>
+        <nav class="navbar" id="navbar">
+          <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+          </button>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -33,17 +39,13 @@
           <div class="hero-copy fade-up">
             <div class="hero-profile">
               <img src="assets/images/profile.webp" alt="Profile photo of Prashanth Chirlavancha" />
-              <div class="hero-profile-caption">
-                <p class="profile-name">Prashanth Chirlavancha</p>
-                <p class="profile-title">DevOps & Cloud Engineer</p>
-              </div>
+              <span class="eyebrow profile-eyebrow">Professional Portfolio</span>
             </div>
-            <span class="eyebrow">Professional Cloud & DevOps</span>
-            <h1>Prashanth Chirlavancha</h1>
-            <p>Professional Cloud and DevOps Engineer with hands-on expertise in AWS, Docker, Kubernetes, Terraform, and CI/CD automation. Specializing in building scalable, secure, and automated infrastructure solutions for enterprise environments.</p>
+            <h1>DevOps & Cloud Engineer</h1>
+            <p>Motivated MCA graduate with hands-on experience in AWS Cloud and DevOps practices. Skilled in cloud infrastructure, CI/CD pipelines, Docker, Kubernetes, Linux, monitoring tools, and automation. Passionate about cloud-native technologies, scalability, and continuous learning.</p>
             <div class="hero-actions">
               <a href="#projects" class="button button-primary">View Projects</a>
-              <a href="#contact" class="button button-secondary">Download Resume</a>
+              <a href="assets/resume/Prashanth_Chirlavancha_Resume.pdf" class="button button-secondary" download="Prashanth_Chirlavancha_Resume.pdf">Download Resume</a>
             </div>
             <div class="hero-links">
               <a href="https://github.com/prashanth766" target="_blank" rel="noreferrer" class="hero-pill">GitHub</a>
@@ -125,11 +127,13 @@
           </div>
           <div class="project-grid fade-up delay-1">
             <article class="project-card">
-              <img src="assets/images/project1.svg" alt="Ecommerce Application Deployment" />
+              <img src="https://copilot.microsoft.com/th/id/BCO.a88862ca-5d97-4cf9-88dd-2053081cf2e3.png" alt="Ecommerce Application Deployment" />
               <div class="project-copy">
                 <h3>Ecommerce Platform Deployment</h3>
                 <p>Architected and deployed a scalable ecommerce application leveraging AWS EC2, Kubernetes orchestration, Docker containerization, and GitHub CI/CD for continuous integration and automated deployments.</p>
-                <p class="project-stack">Tech: AWS EC2, Kubernetes, Docker, GitHub CI/CD, Git</p>
+                <div class="project-stack">
+                  <span>AWS EC2</span><span>Kubernetes</span><span>Docker</span><span>GitHub CI/CD</span><span>Git</span>
+                </div>
                 <div class="project-actions">
                   <a href="https://github.com/prashanth766" target="_blank" class="button button-tertiary">GitHub</a>
                   <a href="#" class="button button-outline">Live Demo</a>
@@ -137,11 +141,13 @@
               </div>
             </article>
             <article class="project-card">
-              <img src="assets/images/project2.svg" alt="HRMS Product Deployment" />
+              <img src="https://copilot.microsoft.com/th/id/BCO.63e6d925-1b0f-411e-822d-bc8520b92e18.png" alt="HRMS Product Deployment" />
               <div class="project-copy">
                 <h3>HRMS Product Infrastructure</h3>
                 <p>Developed and deployed a comprehensive HRMS (Human Resource Management System) using AWS EC2 and Docker containerization, enabling scalable application management and operational efficiency.</p>
-                <p class="project-stack">Tech: AWS EC2, Docker, Linux, Git</p>
+                <div class="project-stack">
+                  <span>AWS EC2</span><span>Docker</span><span>Linux</span><span>Git</span>
+                </div>
                 <div class="project-actions">
                   <a href="https://github.com/prashanth766" target="_blank" class="button button-tertiary">GitHub</a>
                   <a href="#" class="button button-outline">Live Demo</a>
@@ -149,11 +155,13 @@
               </div>
             </article>
             <article class="project-card">
-              <img src="assets/images/project3.svg" alt="CI/CD Pipeline Infrastructure" />
+              <img src="https://copilot.microsoft.com/th/id/BCO.3e7679eb-42d2-4cda-ad64-571917e61947.png" alt="CI/CD Pipeline Infrastructure" />
               <div class="project-copy">
                 <h3>Automated CI/CD Pipeline</h3>
                 <p>Designed and implemented robust CI/CD pipelines utilizing GitHub Actions for automated testing, build, and deployment workflows, ensuring continuous integration and continuous delivery.</p>
-                <p class="project-stack">Tech: GitHub Actions, Jenkins, Docker, Git</p>
+                <div class="project-stack">
+                  <span>GitHub Actions</span><span>Jenkins</span><span>Docker</span><span>Git</span>
+                </div>
                 <div class="project-actions">
                   <a href="https://github.com/prashanth766" target="_blank" class="button button-tertiary">GitHub</a>
                   <a href="#" class="button button-outline">Live Demo</a>
