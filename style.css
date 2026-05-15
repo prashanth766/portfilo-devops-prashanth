@@ -676,6 +676,12 @@ h2 {
   margin: 0 0 0.5rem;
 }
 
+.location {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0 0 0.3rem;
+}
+
 .contact-link {
   display: inline-flex;
   align-items: center;
