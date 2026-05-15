@@ -183,33 +183,76 @@ p {
   border-radius: 999px;
   border: 1px solid transparent;
   text-decoration: none;
-  transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+  transition: all 0.35s cubic-bezier(0.23, 1, 0.320, 1);
+  position: relative;
+  overflow: hidden;
 }
 
 .button-primary {
   background: linear-gradient(135deg, var(--accent), var(--accent-soft));
   color: #fff;
+  box-shadow: 0 8px 24px rgba(143, 108, 255, 0.3);
+}
+
+.button-primary:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 16px 40px rgba(143, 108, 255, 0.5);
+}
+
+.button-primary:active {
+  transform: translateY(-2px) scale(0.98);
 }
 
 .button-secondary {
   border-color: rgba(142, 108, 255, 0.45);
   color: var(--text);
   background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.button:hover {
-  transform: translateY(-2px);
+.button-secondary:hover {
+  transform: translateY(-4px) scale(1.02);
+  background: rgba(142, 108, 255, 0.15);
+  border-color: rgba(142, 108, 255, 0.8);
+  box-shadow: 0 12px 28px rgba(142, 108, 255, 0.3);
+}
+
+.button-secondary:active {
+  transform: translateY(-2px) scale(0.98);
 }
 
 .button-outline {
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: transparent;
   color: var(--text);
+  transition: all 0.35s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button-outline:hover {
+  transform: translateY(-4px) scale(1.02);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+.button-outline:active {
+  transform: translateY(-2px) scale(0.98);
 }
 
 .button-tertiary {
   background: rgba(255, 255, 255, 0.05);
   color: var(--text);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.button-tertiary:hover {
+  transform: translateY(-4px) scale(1.02);
+  background: rgba(143, 108, 255, 0.15);
+  box-shadow: 0 12px 28px rgba(143, 108, 255, 0.25);
+}
+
+.button-tertiary:active {
+  transform: translateY(-2px) scale(0.98);
 }
 
 .hero-pill {
