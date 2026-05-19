@@ -125,20 +125,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // --- Floating Orbs Background ---
-  const orbsContainer = document.createElement('div');
-  orbsContainer.className = 'orbs-container';
-  document.body.appendChild(orbsContainer);
-
-  for (let i = 0; i < 5; i++) {
-    const orb = document.createElement('div');
-    orb.className = 'orb';
-    orb.style.left = Math.random() * 100 + 'vw';
-    orb.style.top = Math.random() * 100 + 'vh';
-    orb.style.width = (Math.random() * 300 + 100) + 'px';
-    orb.style.height = orb.style.width;
-    orb.style.animationDuration = (Math.random() * 20 + 20) + 's';
-    orb.style.animationDelay = (Math.random() * 10) + 's';
-    orbsContainer.appendChild(orb);
-  }
 });
